@@ -1,0 +1,109 @@
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carte{
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+.logo img{
+    height: 60px;
+    width: 80px;
+    padding: 10px 10px;
+    filter: brightness(0) invert(1);
+}
+.logo{
+    padding: 0px;
+    background-color: rgb(17, 17, 147);
+    width: 100%;
+    border-radius: 10px 10px 0px 00px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.univer{
+    color: white;
+    padding: 10px 60px;
+    font-size: 10px;
+}
+
+
+.logo h2{
+    color: white;
+    padding-left: 0px 100px;
+}
+
+.carte .logo .iden{
+    padding-left:30px;
+    
+}
+.carte .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    background: #f0f0f0;
+    width: 100%;
+}
+
+
+
+.carte .form .imag img{
+    height: 150px;
+    width: 120px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.carte .form .inform p{
+    font-size: 14px;
+   
+}
+.carte .form .inform .coleur{
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 10;
+    
+}
+
+.carte .form .inform{
+   
+ position: relative;
+  
+}
+
+.carte .form .inform::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+   
+  background-image: url("image/back.png");
+    background-size: cover; 
+    background-position: center;
+  
+}
+
