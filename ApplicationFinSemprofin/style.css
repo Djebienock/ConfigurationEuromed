@@ -1,0 +1,116 @@
+body {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('assets/euro.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 10px;
+}
+
+.login-box {
+    background: #fff;
+    width: 360px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-header i {
+    font-size: 45px;
+    color: #4a6cff;
+}
+
+.login-header p {
+    color: #777;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.form-group i {
+    color: #4a6cff;
+    margin-right: 6px;
+}
+
+.form-group input {
+    width: 83%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #4a6cff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3448c5;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.alert-error {
+    background: #ffe5e5;
+    color: #c0392b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
