@@ -1,0 +1,83 @@
+
+
+
+
+
+body {
+    
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url('assets/euro.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember input {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4a6cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3448c5;
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+

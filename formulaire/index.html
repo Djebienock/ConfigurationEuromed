@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ateliers Informatiques - Dje</title>
+</head>
+<body>
+    <header>
+        <nav class="navi" role="navigation" aria-label="Navigation principale">
+            <div class="logo">
+                <a href="#accueil">D<span>j</span>e</a>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li><a href="#ateliers">Ateliers</a></li>
+                    <li><a href="#inscription">Inscription</a></li>
+                    <li><a href="#contact">Contact</a></li>  
+                </ul>
+            </div>  
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="bienvenue" id="accueil">
+            <div class="bien_texte">
+                <h1>Bienvenue dans notre atelier informatique</h1>
+                <p>Rejoignez-nous pour explorer votre créativité et apprendre de nouvelles compétences informatique.</p>
+            </div>
+            <div class="bouton_inscription">
+                <button type="button" class="voir un">Découvrir +</button>
+                <button type="button" class="voir deux">Inscription</button>
+            </div>
+        </section>
+
+        <section class="mot">
+            <h1>Bienvenue sur notre plateforme, renseignez vos informations svp</h1>
+        </section>
+
+        <section class="ensemble" id="ateliers">
+            <div class="attelier">
+                <table class="attelier_table" aria-describedby="table-description">
+                    <caption class="liste_capt">Liste des ateliers informatiques</caption>
+                    <span id="table-description" class="sr-only">Tableau présentant les différents ateliers disponibles avec leurs caractéristiques</span>
+                    <thead>
+                        <tr>
+                            <th scope="col">Titre</th>
+                            <th scope="col">Durée</th>
+                            <th scope="col">Niveau</th>
+                            <th scope="col">Prix</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initiation à HTML & CSS</td>
+                            <td>3 heures</td>
+                            <td>Débutant</td>
+                            <td>Gratuit</td>
+                            <td>12/11/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Python pour débutants</td>
+                            <td>5 heures</td>
+                            <td>Débutant → Intermédiaire</td>
+                            <td>50 €</td>
+                            <td>19/11/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Administration Linux</td>
+                            <td>4 heures</td>
+                            <td>Intermédiaire</td>
+                            <td>30 €</td>
+                            <td>26/11/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Sécurité web (XSS & co.)</td>
+                            <td>6 heures</td>
+                            <td>Intermédiaire → Avancé</td>
+                            <td>70 €</td>
+                            <td>03/12/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Atelier React.js — mini projet</td>
+                            <td>8 heures</td>
+                            <td>Intermédiaire</td>
+                            <td>90 €</td>
+                            <td>10/12/2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="formulaire" id="inscription">
+                <form action="#" method="post">
+                    <h2>Inscription</h2>
+                    
+                    <fieldset>
+                        <legend>Informations Personnelles</legend>
+                        
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                            <small>Obligatoire</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                            <small>Obligatoire</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                            <small>Format valide requis</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="naissance">Date de naissance *</label>
+                            <input type="date" id="naissance" name="naissance" required>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="label">Genre *</span>
+                            <div class="radio-group">
+                                <input type="radio" id="homme" name="genre" value="homme" required>
+                                <label for="homme">Homme</label>
+                                
+                                <input type="radio" id="femme" name="genre" value="femme">
+                                <label for="femme">Femme</label>
+                                
+                                
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Choix d'Atelier</legend>
+                        
+                        <div class="form-group">
+                            <span class="label">Ateliers souhaités *</span>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="atelier1" name="ateliers" value="react">
+                                <label for="atelier1">Atelier React.js — mini projet</label>
+                                
+                                <input type="checkbox" id="atelier2" name="ateliers" value="securite">
+                                <label for="atelier2">Sécurité web (XSS & co.)</label>
+                                
+                                <input type="checkbox" id="atelier3" name="ateliers" value="linux">
+                                <label for="atelier3">Administration Linux</label>
+                                
+                                <input type="checkbox" id="atelier4" name="ateliers" value="html">
+                                <label for="atelier4">Initiation à HTML & CSS</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Niveau d'expérience *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Sélectionnez votre niveau</option>
+                                <option value="debutant">Débutant</option>
+                                <option value="intermediaire">Intermédiaire</option>
+                                <option value="avance">Avancé</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Commentaire</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Vos commentaires ou questions..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fichier">Justificatif (optionnel)</label>
+                            <input type="file" id="fichier" name="fichier" accept=".pdf,.jpg,.png">
+                            <small>Formats acceptés: PDF, JPG, PNG</small>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit_button">S'inscrire</button>
+                        <button type="reset" class="reset_button">Réinitialiser</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="contact">
+            <h2>Contactez-nous :</h2>
+            <address>
+                <p>Téléphone: <a href="tel:+212663653180">+212 663 653180</a></p>
+                <p>Email: <a href="mailto:enockdjebi@gmail.com">enockdjebi@gmail.com</a></p>
+            </address>
+        </div>
+        <div class="copy">
+            <p>&copy; 2025 Atelier Informatique. Dje Bi Trazie Enock</p>
+        </div>
+    </footer>
+</body>
+</html>
